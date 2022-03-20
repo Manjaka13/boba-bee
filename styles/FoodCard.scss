@@ -1,0 +1,68 @@
+.food-card {
+	margin: 50px;
+	width: 330px;
+	height: 250px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+	&__info {
+		background: rgba(0, 0, 0, 0.6);
+		position: relative;
+		bottom: -100%;
+	}
+
+	&__price {
+		// color
+	}
+
+	&__title,
+	&__price {
+		text-shadow: 1px 1px 3px black;
+	}
+
+	&__view {
+		flex-grow: 1;
+		.view {
+			border: none;
+			background: rgba(0, 0, 0, 0.6);
+			border: 3px white solid;
+			opacity: 0;
+			pointer-events: none;
+			&:hover {
+				color: $color-theme;
+				border: 3px $color-theme solid;
+			}
+			&:active {
+				background: rgba(0, 0, 0, 0.8);
+			}
+		}
+	}
+
+	&:hover {
+		.view {
+			opacity: 1;
+			pointer-events: auto;
+		}
+		.food-card__info {
+			bottom: 0;
+		}
+	}
+
+	.about {
+		max-width: 50%;
+	}
+
+	.cart {
+		flex: 1;
+	}
+
+	.add-cart {
+		border: none;
+		box-shadow: 1px 1px 3px black;
+		&:hover {
+			background: darken(green, 10%);
+		}
+		&:active {
+			background: lighten(green, 10%);
+		}
+	}
+}

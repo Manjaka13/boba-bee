@@ -27,7 +27,8 @@ import {
 	faHeart,
 	faGlobe,
 	faNewspaper,
-	faShippingFast
+	faShippingFast,
+	faSearchPlus
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -63,5 +64,6 @@ library.add(
 	faHeart,
 	faGlobe,
 	faNewspaper,
-	faShippingFast
+	faShippingFast,
+	faSearchPlus
 );

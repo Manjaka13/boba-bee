@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Heading from "components/Heading";
 import Page from "components/Page";
 import CoverHome from "components/CoverHome";
+import FoodCard from "components/FoodCard";
 import { PageProvider } from "hooks/usePage";
 
 /*
@@ -19,6 +20,7 @@ const HomePage = () => (
 		<Page>
 			<Fragment>
 				<CoverHome />
+				<FoodCard />
 			</Fragment>
 		</Page>
 	</PageProvider>
