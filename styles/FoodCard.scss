@@ -5,9 +5,10 @@
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 
 	&__info {
-		background: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.8);
 		position: relative;
 		bottom: -100%;
+		opacity: 0;
 	}
 
 	&__price {
@@ -28,22 +29,24 @@
 			opacity: 0;
 			pointer-events: none;
 			&:hover {
-				color: $color-theme;
-				border: 3px $color-theme solid;
+				background: rgba(0, 0, 0, 0.8);
 			}
 			&:active {
-				background: rgba(0, 0, 0, 0.8);
+				color: $color-theme;
+				border: 3px $color-theme solid;
 			}
 		}
 	}
 
 	&:hover {
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 		.view {
 			opacity: 1;
 			pointer-events: auto;
 		}
 		.food-card__info {
 			bottom: 0;
+			opacity: 1;
 		}
 	}
 
