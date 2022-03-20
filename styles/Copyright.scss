@@ -1,0 +1,28 @@
+.copyright {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+
+	@include screen-x(500px) {
+		flex-direction: column;
+	}
+
+	.link {
+		&:hover {
+			color: white;
+			text-shadow: 1px 1px 3px black;
+		}
+	}
+
+	.left,
+	.right {
+		color: rgb(50, 50, 50);
+		@include screen-x(500px) {
+			padding: 0;
+		}
+	}
+
+	.left {
+		@include screen-x(500px) {
+			padding-bottom: 10px;
+		}
+	}
+}

@@ -1,0 +1,64 @@
+.cover-home {
+	height: calc(100vh - 76px);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+	margin-top: 76px;
+
+	&__bg {
+		background: url(/images/cover-home.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	&__overlay {
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	&__title {
+		text-shadow: 1px 1px 3px black;
+		font-size: 5em;
+		@include screen-x(600px) {
+			font-size: 3.6em;
+			margin-bottom: 20px;
+		}
+		@include screen-x(400px) {
+			font-size: 3em;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		border: 3px rgb(247, 241, 143) solid;
+		background: rgba(0, 0, 0, 0.4);
+		background-size: cover;
+		border-radius: 20px 0 0 20px;
+		&:hover {
+			background: rgba(0, 0, 0, 0.7);
+		}
+	}
+
+	// .milktea {
+	// 	display: inline-block;
+	// 	border: 5px $color-theme solid;
+	// 	position: relative;
+	// 	box-shadow: 3px 3px 5px black inset;
+	// 	&__item {
+	// 		position: absolute;
+	// 		top: 0;
+	// 		left: 0;
+	// 		opacity: 0;
+	// 		transform: rotate(180deg);
+	// 		&--shown {
+	// 			opacity: 1;
+	// 			transform: rotate(0deg);
+	// 		}
+	// 	}
+	// }
+
+	&__honeycomb {
+		position: relative;
+		top: 34px;
+		@include screen-x(600px) {
+			height: 70px;
+			top: 25px;
+		}
+	}
+}

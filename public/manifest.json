@@ -1,0 +1,15 @@
+{
+	"short_name": "Bobabee",
+	"name": "Boba bee",
+	"icons": [
+		{
+			"src": "images/bobabee-logo.png",
+			"sizes": "100x100",
+			"type": "image/png"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#ffeb10",
+	"background_color": "#f5f5f5"
+}

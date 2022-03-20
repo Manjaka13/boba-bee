@@ -1,0 +1,110 @@
+.navbar {
+	height: 76px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 13;
+
+	&__logo {
+		border: 4px white solid;
+		box-shadow: 1px 1px 3px black;
+		animation: rotateAnimation 5s linear infinite;
+		@include screen-x(500px) {
+			width: 40px;
+			margin-right: 10px;
+		}
+		@keyframes rotateAnimation {
+			from {
+				transform: rotateY(0deg);
+			}
+			to {
+				transform: rotateY(360deg);
+			}
+		}
+	}
+	
+	&__title {
+		text-shadow: 1px 1px 3px black;
+		// -webkit-text-stroke-color: rgb(60, 60, 60);
+		// -webkit-text-stroke-width: 2px;
+		@include screen-x(1000px) {
+			font-size: 1.8em;
+		}
+		@include screen-x(500px) {
+			font-size: 1.6em;
+		}
+	}
+
+	.app-links {
+		@include flex-row(initial, center);
+		@include screen-x(900px) {
+			display: none;
+		}
+		&__link {
+			@include transition;
+			color: rgb(100, 100, 100);
+			font-size: 13pt;
+			padding: 10px;
+			border-radius: 5px;	
+			font-weight: bold;
+			&:hover {
+				color: black;
+			}
+		}
+		&__item {
+			margin-left: 50px;
+			@include screen-x(1600px) {
+				margin-left: 10px;
+			}
+			@include screen-x(1400px) {
+				margin-left: 30px;
+			}
+			@include screen-x(1000px) {
+				margin-left: 5px;
+			}
+			&--active {
+				.app-links__link {
+					background: white;
+					color: rgb(100, 100, 100);
+					box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.6) inset;
+					&:hover {
+						color: black;
+					}
+				}
+			}
+		}
+	}
+
+	&__trigger {
+		display: none;
+		$trigger-border: 3px;
+		$trigger-size: calc(60px - $trigger-border);
+		width: $trigger-size;
+		height: $trigger-size;
+		border: $trigger-border rgb(100, 100, 100) solid;
+		// box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.6);
+		color: rgb(100, 100, 100);
+		background: white;
+		&:hover {
+			font-size: 2em;
+			border: $trigger-border white solid;
+			background: $color-theme;
+			box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.6);
+		}
+		&:active {
+			box-shadow: 0px 0px 10px black;
+			font-size: 1em;
+		}
+		@include screen-x(900px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		@include screen-x(500px) {
+			$trigger-size: calc(50px - $trigger-border);
+			width: $trigger-size;
+			height: $trigger-size;
+		}
+	}
+}
