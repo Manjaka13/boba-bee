@@ -1,8 +1,19 @@
-.food-card {
-	margin: 50px;
-	width: 330px;
+.snack-card {
+	// width: 330px;
 	height: 250px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+	@include screen-x(750px) {
+		height: 350px;
+	}
+
+	@include screen-x(650px) {
+		height: 500px;
+	}
+
+	@include screen-x(450px) {
+		height: 300px;
+	}
 
 	&__info {
 		background: rgba(0, 0, 0, 0.8);
@@ -11,13 +22,15 @@
 		opacity: 0;
 	}
 
-	&__price {
-		// color
-	}
-
 	&__title,
 	&__price {
 		text-shadow: 1px 1px 3px black;
+	}
+
+	&__title {
+		@include screen-x(1700px) {
+			text-align: center;
+		}
 	}
 
 	&__view {
@@ -38,20 +51,23 @@
 		}
 	}
 
+	&__about {
+		@include screen-x(1700px) {
+			flex-direction: column;
+			padding-top: 0;
+		}
+	}
+
 	&:hover {
 		box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 		.view {
 			opacity: 1;
 			pointer-events: auto;
 		}
-		.food-card__info {
+		.snack-card__info {
 			bottom: 0;
 			opacity: 1;
 		}
-	}
-
-	.about {
-		max-width: 50%;
 	}
 
 	.cart {
