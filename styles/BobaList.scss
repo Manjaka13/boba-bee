@@ -1,0 +1,50 @@
+.boba-list {
+	margin-top: 76px;
+
+	&__container {
+		height: 430px;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+		@include screen-x(1000px) {
+			height: auto;
+		}
+	}
+
+	&__list {
+		@include screen-x(1000px) {
+			width: 100%;
+		}
+	}
+
+	&__separator {
+		height: 5px;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+
+	&__shipping {
+		position: relative;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+		.icon {
+			color: #323232;
+			box-shadow: 1px 1px 3px black;
+		}
+		.title {
+			text-shadow: 1px 1px 3px black;
+		}
+		.text {
+			background: rgba(0, 0, 0, 0.7);
+		}
+		.agenda {
+			position: absolute;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.7);
+		}
+		// @include screen-x(1000px) {
+		// 	display: none;
+		// }
+	}
+
+	&__menu {
+		flex-grow: 1;
+	}
+}

@@ -1,10 +1,7 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import {
-	faFacebook,
-	faInstagram
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import {
 	faUser,
 	faHome,
@@ -28,7 +25,9 @@ import {
 	faGlobe,
 	faNewspaper,
 	faShippingFast,
-	faSearchPlus
+	faSearchPlus,
+	faGlassWater,
+	faClock,
 } from "@fortawesome/free-solid-svg-icons";
 
 /*
@@ -65,5 +64,7 @@ library.add(
 	faGlobe,
 	faNewspaper,
 	faShippingFast,
-	faSearchPlus
+	faSearchPlus,
+	faGlassWater,
+	faClock
 );

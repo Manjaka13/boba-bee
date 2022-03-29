@@ -16,7 +16,7 @@ main {
 
 .leaflet-control-attribution {
 	font-size: 1.3em;
-    font-weight: bold;
+	font-weight: bold;
 }
 
 // Component styles
@@ -37,3 +37,5 @@ main {
 @import "./Waves.scss";
 @import "./SnackCard.scss";
 @import "./SnackList.scss";
+@import "./BobaCard.scss";
+@import "./BobaList.scss";

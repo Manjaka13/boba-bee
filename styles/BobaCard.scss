@@ -1,0 +1,42 @@
+.boba-card {
+	width: calc(100% - 20px);
+
+	.add-cart,
+	.view {
+		opacity: 0;
+		pointer-events: none;
+		border: none;
+		box-shadow: 1px 1px 3px black;
+	}
+
+	.add-cart {
+		&:hover {
+			background: darken(green, 10%);
+		}
+		&:active {
+			background: lighten(green, 10%);
+		}
+		@include screen-x(600px) {
+			display: none;
+		}
+	}
+
+	&:hover {
+		background: rgb(230, 230, 230);
+		background: $color-theme;
+		.add-cart,
+		.view {
+			opacity: 1;
+			pointer-events: auto;
+		}
+		.boba-card__representation {
+			transform: rotate(20deg);
+		}
+	}
+
+	&__price {
+		@include screen-x(700px) {
+			display: none;
+		}
+	}
+}
