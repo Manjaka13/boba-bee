@@ -19,7 +19,7 @@ const linkList = [
 		content: "Menu",
 		icon: ["fas", "hamburger"],
 		title: "Notre menu du jour !",
-		link: "/menu"
+		link: "/carte"
 	},
 	{
 		content: "Actus",
