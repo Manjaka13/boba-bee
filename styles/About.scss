@@ -1,0 +1,37 @@
+.about {
+	padding-top: 60px;
+	&__frame {
+		position: relative;
+		box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+		width: 330px;
+		height: 330px;
+		// transform: rotate(-7deg);
+		animation: oscillation infinite 3.1s ease-in-out;
+		transform-origin: 280px 30px;
+		.image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			width: calc(100% - 30px);
+		}
+	}
+
+	@keyframes oscillation {
+		0% {
+			transform: rotate(-10deg);
+		}
+		50% {
+			transform: rotate(-15deg);
+		}
+		100% {
+			transform: rotate(-10deg);
+		}
+	}
+
+	&__content {
+		flex: 1;
+	}
+}
