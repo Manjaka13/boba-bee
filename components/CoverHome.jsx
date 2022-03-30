@@ -44,8 +44,8 @@ const CoverHome = () => {
 	return (
 		<div className="cover-home o-h bg-t">
 			<div className="cover-home__bg w-100 h-100">
-				<div className="cover-home__overlay w-100 h-100">
-					<div className="w-100 h-70">
+				<div className="cover-home__overlay w-100 h-100 f-c-st-st">
+					<div className="top w-100">
 						<div className="container h-100 o-h f-c-ce-ce">
 							<h1 className="cover-home__title fs-400 white tx-c mg-b-40">
 								Taste like <span className="t">honey</span> pearl
@@ -70,7 +70,7 @@ const CoverHome = () => {
 							</p>
 						</div>
 					</div>
-					<div className="w-100 h-30 o-h">
+					<div className="bottom w-100 o-h">
 						<Waves />
 					</div>
 				</div>

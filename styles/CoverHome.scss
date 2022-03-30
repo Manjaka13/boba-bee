@@ -61,4 +61,12 @@
 			top: 25px;
 		}
 	}
+
+	.top {
+		flex-grow: 1;
+	}
+
+	.bottom {
+		height: 150px;
+	}
 }
