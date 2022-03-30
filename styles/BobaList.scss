@@ -10,6 +10,8 @@
 	}
 
 	&__list {
+		background: url(/images/paper-bg.jpg) center center no-repeat;
+		background-size: cover;
 		@include screen-x(1000px) {
 			width: 100%;
 		}

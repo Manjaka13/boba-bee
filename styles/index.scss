@@ -5,7 +5,8 @@
 @import "./vars.scss";
 @import "./section.scss";
 
-#__next {
+#__next,
+main {
 	overflow: visible;
 }
 
@@ -39,3 +40,4 @@ main {
 @import "./SnackList.scss";
 @import "./BobaCard.scss";
 @import "./BobaList.scss";
+@import "./MobileApp.scss";

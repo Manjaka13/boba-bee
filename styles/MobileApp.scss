@@ -1,0 +1,27 @@
+.mobile-app {
+	background: url(/images/wood-bg.jpg) top left no-repeat;
+	background-size: cover;
+	height: 380px;
+	position: relative;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+	overflow: visible;
+	margin-top: 80px;
+	margin-bottom: 80px;
+
+	.container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	&__phone {
+		height: 500px;
+	}
+
+	.text {
+		text-shadow: 1px 1px 3px black;
+	}
+}
