@@ -8,6 +8,14 @@
 	margin-top: 80px;
 	margin-bottom: 80px;
 
+	@include screen-x(850px) {
+		height: 300px;
+	}
+
+	@include screen-x(700px) {
+		height: 250px;
+	}
+
 	.container {
 		position: absolute;
 		top: 0;
@@ -19,9 +27,56 @@
 
 	&__phone {
 		height: 500px;
+		@include screen-x(850px) {
+			height: 420px;
+		}
+		@include screen-x(700px) {
+			height: 340px;
+		}
+		@include screen-x(600px) {
+			height: 200px;
+		}
+		@include screen-x(400px) {
+			display: none;
+		}
 	}
 
 	.text {
 		text-shadow: 1px 1px 3px black;
+		@include screen-x(850px) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		@include screen-x(700px) {
+			&:first-child {
+				display: none;
+			}
+		}
+	}
+
+	.title {
+		@include screen-x(850px) {
+			font-size: 2.8em;
+		}
+		@include screen-x(600px) {
+			font-size: 2em;
+			text-align: center;
+		}
+	}
+
+	.download {
+		@include screen-x(850px) {
+			width: 150px;
+		}
+		@include screen-x(600px) {
+			margin: 0;
+			margin-bottom: 20px;
+		}
+	}
+
+	.download-buttons {
+		@include screen-x(600px) {
+			flex-direction: column;
+		}
 	}
 }
