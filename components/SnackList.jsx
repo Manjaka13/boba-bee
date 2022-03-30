@@ -7,12 +7,49 @@ import SnackCard from "./SnackCard";
 	List of snacks
 */
 
-const snackList = ["test", "test", "test", "test", "test", "test"];
+const snackList = [
+	{
+		id: uuidv4(),
+		name: "Nems (10 pcs)",
+		image: "/images/menu/Nems.png",
+		price: "4 000 Ar",
+	},
+	{
+		id: uuidv4(),
+		name: "Omelette sur légumes",
+		image: "/images/menu/omelette-legumes.png",
+		price: "6 000 Ar",
+	},
+	{
+		id: uuidv4(),
+		name: "Poulet grillé",
+		image: "/images/menu/poulet-grille.png",
+		price: "11 000 Ar",
+	},
+	{
+		id: uuidv4(),
+		name: "Salade roquette et  citron",
+		image: "/images/menu/salade-roquette-citron.png",
+		price: "8 000 Ar",
+	},
+	{
+		id: uuidv4(),
+		name: "Viande à la sauce tomate",
+		image: "/images/menu/viande-sauce-tomate.jpg",
+		price: "9 000 Ar",
+	},
+	{
+		id: uuidv4(),
+		name: "Vin Maroparasy",
+		image: "/images/menu/vin-maroparasy.jpg",
+		price: "12 000 Ar",
+	},
+];
 
 const SnackList = () => {
-	const mappedSnacks = snackList.map(() => (
+	const mappedSnacks = snackList.map((snack) => (
 		<li key={uuidv4()}>
-			<SnackCard />
+			<SnackCard snack={snack} />
 		</li>
 	));
 

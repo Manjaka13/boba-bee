@@ -39,7 +39,7 @@ const BobaList = () => {
 						</p>
 					</div>
 					<div className="boba-list__list w-60 h-100 o-h f-c-st-st">
-						<h2 className="fs-170 tx-c pd-t-10 pd-b-10 w-100">
+						<h2 className="title fs-170 tx-c pd-t-10 pd-b-10 w-100">
 							<Icon icon={["fas", "glass-water"]} /> Bubble Tea
 						</h2>
 						<div className="boba-list__separator w-40 bg-t br-5 tr-700"></div>
