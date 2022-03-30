@@ -4,15 +4,19 @@
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 
 	@include screen-x(750px) {
-		height: 350px;
+		height: 200px;
 	}
 
-	@include screen-x(650px) {
-		height: 500px;
+	@include screen-x(600px) {
+		height: 180px;
+	}
+
+	@include screen-x(530px) {
+		height: 220px;
 	}
 
 	@include screen-x(450px) {
-		height: 300px;
+		height: 350px;
 	}
 
 	&__info {
