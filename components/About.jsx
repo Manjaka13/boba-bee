@@ -5,7 +5,7 @@ import React from "react";
 const About = () => (
 	<div className="about">
 		<div className="container">
-			<div className="w-100 f-r-ce-ce">
+			<div className="about__container w-100 f-r-ce-ce">
 				<div className="about__frame o-h bg-white">
 					<img className="image" src="/images/about.jpg" alt="Boba drink" />
 				</div>

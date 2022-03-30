@@ -1,13 +1,30 @@
 .about {
 	padding-top: 60px;
+
+	&__container {
+		@include screen-x(800px) {
+			flex-direction: column-reverse;
+		}
+	}
+
 	&__frame {
 		position: relative;
 		box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 		width: 330px;
 		height: 330px;
-		// transform: rotate(-7deg);
 		animation: oscillation infinite 3.1s ease-in-out;
 		transform-origin: 280px 30px;
+		@include screen-x(1100px) {
+			width: 250px;
+			height: 250px;
+			transform-origin: 200px 30px;
+		}
+		@include screen-x(800px) {
+			width: 200px;
+			height: 200px;
+			transform-origin: 100px 30px;
+			margin-bottom: 40px;
+		}
 		.image {
 			position: absolute;
 			top: 0;
@@ -16,6 +33,9 @@
 			bottom: 0;
 			margin: auto;
 			width: calc(100% - 30px);
+			@include screen-x(800px) {
+				width: calc(100% - 10px);
+			}
 		}
 	}
 
@@ -33,5 +53,8 @@
 
 	&__content {
 		flex: 1;
+		@include screen-x(800px) {
+			padding-left: 0;
+		}
 	}
 }
