@@ -4,6 +4,8 @@ import Page from "components/Page";
 import CoverHome from "components/CoverHome";
 import { PageProvider } from "hooks/usePage";
 import MobileApp from "components/MobileApp";
+import About from "components/About";
+import Divider from "components/Divider";
 
 /*
 	HomePage
@@ -21,6 +23,8 @@ const HomePage = () => (
 		<Page>
 			<Fragment>
 				<CoverHome />
+				<About />
+				<Divider />
 				<MobileApp />
 			</Fragment>
 		</Page>
