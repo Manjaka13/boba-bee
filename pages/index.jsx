@@ -15,7 +15,7 @@ const HomePage = () => (
 	<PageProvider defaultTab={0}>
 		<Heading
 			title="Boba Bee, taste like honey pearl !"
-			image="/images/bobabee-logo.png"
+			image="/images/covers/home.jpg"
 		>
 			Bienvenue sur le site officiel de Boba Bee, parcourez notre liste de
 			produits.

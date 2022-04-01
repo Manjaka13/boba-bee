@@ -11,7 +11,7 @@ import BobaList from "components/BobaList";
 
 const Carte = () => (
 	<PageProvider defaultTab={1}>
-		<Heading title="Notre carte du jour" image="/images/bobabee-logo.png">
+		<Heading title="Notre carte du jour" image="/imagescovers/carte.jpg">
 			Consultez notre menu et séléctionnez ce qui est à votre goût !
 		</Heading>
 		<Page>
